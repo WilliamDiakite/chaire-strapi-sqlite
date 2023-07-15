@@ -1,26 +1,33 @@
 const path = require("path");
 const fs = require("fs");
 
-const fname = fs
-  .readdirSync(path.join(__dirname, "..", "backups"))
-  .sort()
-  .at(-1);
+module.exports = ({ env }) => {
+  let fname;
 
-console.log(
-  "\nUsing backup file:",
-  path.join(__dirname, "..", `backups/${fname}`),
-  "\n"
-);
+  if (env("NODE_ENV") === "development") {
+    fname = fs.readdirSync(path.join(__dirname, "..", "backups")).sort().at(-1);
 
-module.exports = ({ env }) => ({
-  connection: {
-    client: "sqlite",
+    console.log(
+      "\nUsing backup file:",
+      path.join(__dirname, "..", `backups/${fname}`),
+      "\n"
+    );
+  }
+
+  return {
     connection: {
-      filename: env(
-        "DATABASE_FILENAME",
-        path.join(__dirname, "..", `backups/${fname}`)
-      ),
+      client: "sqlite",
+      connection: {
+        filename: env(
+          "DATABASE_FILENAME",
+          path.join(
+            __dirname,
+            "..",
+            `${fname ? `backups/${fname}` : ".tmp/data.db"}}`
+          )
+        ),
+      },
+      useNullAsDefault: true,
     },
-    useNullAsDefault: true,
-  },
-});
+  };
+};
