@@ -2433,6 +2433,15 @@
     "@strapi/utils" "4.11.5"
     sendmail "^1.6.1"
 
+"@strapi/provider-upload-cloudinary@^4.11.5":
+  version "4.11.5"
+  resolved "https://registry.npmjs.org/@strapi/provider-upload-cloudinary/-/provider-upload-cloudinary-4.11.5.tgz"
+  integrity sha512-D7KCxJ1gbrW+b5AqZHsA/z17lKHkKkrQaYBwjCaLi8h0f1RfD/QcbFZaQPwDXKr7iy+bwRqTGPAfmFbx8Mzumw==
+  dependencies:
+    "@strapi/utils" "4.11.5"
+    cloudinary "^1.37.0"
+    into-stream "^5.1.0"
+
 "@strapi/provider-upload-local@4.11.5":
   version "4.11.5"
   resolved "https://registry.npmjs.org/@strapi/provider-upload-local/-/provider-upload-local-4.11.5.tgz"
@@ -4084,7 +4093,7 @@ cloudinary-core@^2.13.0:
   resolved "https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.13.0.tgz"
   integrity sha512-Nt0Q5I2FtenmJghtC4YZ3MZZbGg1wLm84SsxcuVwZ83OyJqG9CNIGp86CiI6iDv3QobaqBUpOT7vg+HqY5HxEA==
 
-cloudinary@^1.25.1:
+cloudinary@^1.25.1, cloudinary@^1.37.0:
   version "1.37.3"
   resolved "https://registry.npmjs.org/cloudinary/-/cloudinary-1.37.3.tgz"
   integrity sha512-XrGb60ZeQhYp9QQjj5DP3cYsAc27OV1B7pezvVxyqgHB5WMeMsofzeIy6+k0o/fCCv744Nf7xsYiTlUi3V0V/Q==
