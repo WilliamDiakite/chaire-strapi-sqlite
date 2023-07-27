@@ -23,7 +23,7 @@ module.exports = ({ env }) => {
           path.join(
             __dirname,
             "..",
-            `${fname ? `backups/${fname}` : ".tmp/data.db"}}`
+            `${fname ? `backups/${fname}` : ".tmp/data.db"}`
           )
         ),
       },
