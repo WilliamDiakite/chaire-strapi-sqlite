@@ -99,6 +99,20 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "imgPlacement": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "bottom"
+      ],
+      "required": true,
+      "default": "top"
     }
   }
 }

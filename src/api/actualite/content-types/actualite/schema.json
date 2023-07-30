@@ -73,6 +73,20 @@
       },
       "type": "uid",
       "targetField": "title"
+    },
+    "imgPlacement": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "bottom"
+      ],
+      "default": "top",
+      "required": true
     }
   }
 }
