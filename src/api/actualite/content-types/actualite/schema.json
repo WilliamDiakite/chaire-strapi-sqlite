@@ -35,9 +35,9 @@
       "type": "string",
       "required": true
     },
-    "image": {
+    "images": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images"
