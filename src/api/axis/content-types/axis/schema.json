@@ -49,6 +49,20 @@
           "localized": false
         }
       }
+    },
+    "page": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "Axe 1",
+        "Axe 2",
+        "À propos"
+      ],
+      "required": true
     }
   }
 }
