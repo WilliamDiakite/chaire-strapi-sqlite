@@ -16,15 +16,6 @@
     }
   },
   "attributes": {
-    "header": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "content": {
       "pluginOptions": {
         "i18n": {
@@ -46,15 +37,6 @@
         }
       }
     },
-    "image_small_description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "imge_big": {
       "type": "media",
       "multiple": false,
@@ -67,15 +49,6 @@
           "localized": false
         }
       }
-    },
-    "image_big_description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
     }
   }
 }

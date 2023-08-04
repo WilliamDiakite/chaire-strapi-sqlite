@@ -73,7 +73,8 @@
         }
       },
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
     "imgPlacement": {
       "pluginOptions": {
