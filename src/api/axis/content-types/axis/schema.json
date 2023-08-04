@@ -58,9 +58,9 @@
       },
       "type": "enumeration",
       "enum": [
-        "Axe 1",
-        "Axe 2",
-        "À propos"
+        "axe-1",
+        "axe-2",
+        "a-propos"
       ],
       "required": true
     }
