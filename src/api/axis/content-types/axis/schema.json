@@ -37,7 +37,7 @@
         }
       }
     },
-    "imge_big": {
+    "image_big": {
       "type": "media",
       "multiple": false,
       "required": true,
