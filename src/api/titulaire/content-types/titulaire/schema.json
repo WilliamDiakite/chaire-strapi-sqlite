@@ -4,7 +4,8 @@
   "info": {
     "singularName": "titulaire",
     "pluralName": "titulaires",
-    "displayName": "Tenured"
+    "displayName": "Tenured",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -51,6 +52,19 @@
         }
       },
       "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
     }
   }
 }
