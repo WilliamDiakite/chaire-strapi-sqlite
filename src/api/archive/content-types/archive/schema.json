@@ -29,7 +29,8 @@
         "filter.conference",
         "filter.studyDay",
         "filter.publication"
-      ]
+      ],
+      "required": true
     },
     "date": {
       "pluginOptions": {
@@ -89,7 +90,8 @@
       "enum": [
         "filter.axis1",
         "filter.axis2"
-      ]
+      ],
+      "required": true
     },
     "slug": {
       "pluginOptions": {
